@@ -1,8 +1,15 @@
-const person = {
+const person: {
+  name: string;
+  age: number;
+  nickname: string;
+  hobbies: string [];
+  role: [number, string];
+} = {
   name: 'Zach',
   age: 22,
   nickname: 'Z',
-  hobbies: ['Sports', 'cooking', 'gaming']
+  hobbies: ['Sports', 'cooking', 'gaming'],
+  role: [1, 'Driver']
 }
 
 let favoriteAct: string[];
@@ -13,3 +20,5 @@ for (const hobby of person.hobbies) {
 }
 
 console.log(person.nickname)
+
+console.log(person)
